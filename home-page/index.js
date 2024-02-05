@@ -1,5 +1,5 @@
 function toggleMenu() {
-    const toggleMenu = document.querySelector(".toggleMenu");
+    const toggleMenu = document.querySelector(".toggle-menu");
     const navigation = document.querySelector(".navigation");
     const searchBtn = document.querySelector(".search-btn");
     toggleMenu.classList.toggle("active");

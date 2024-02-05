@@ -220,7 +220,7 @@ nav a:hover {
 
 /* media query*/
 @media screen and (max-width: 1000px) {
-    .toggleMenu {
+    .toggle-menu {
         position: absolute;
         right: 5%;
         background-image: url("images/menu.png");
@@ -233,7 +233,7 @@ nav a:hover {
         z-index: 1000;
         transform: background-size 0.3s ease-in-out;
     }
-    .toggleMenu.active {
+    .toggle-menu.active {
         position: fixed;
         background-image: url("./images/icons8-x-24.png");
         background-size: 25px;
