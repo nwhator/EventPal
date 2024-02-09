@@ -6,7 +6,8 @@
     <title>EventPal</title>
     <link rel="stylesheet" href="style1.css">
     <script src="index.js" type="text/javascript" defer></script>
-    <script src="https://kit.fontawesome.com/a655b7c4a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
 </head>
 <body>
     <section class="nav-hero-bg">
@@ -18,8 +19,22 @@
                 <ul class="primary-links row">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li class="service-link">
+                        <a href="#">Services</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="profile-link">
+                        <a href="#">Profile</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">FAQ</a></li>
                     <ul class="secondary-links row">
@@ -53,6 +68,35 @@
             </div>
         </div>
     </section>
+    <!--AboutUs section -->
+    <section>
+        <div class="about-us cont">
+            <h1>About Us</h1>
+            <div class="wrapper">
+                <div class="content">
+                    <h3>Welcome to <u>EventPal</u>, your trusted destination for connecting with local service providers and experts.</h3>
+                    <p>At <b>EventPal</b>, we believe in the power of community and the value of local expertise. Our platform is designed
+                        to make it easy for you to find reliable professionals who can help you with a wide range of tasks and services, all right in your neighborhood.</p>
+                        We're here to make finding local services easy and convenient for you. Whether you need a handyman, a tutor, or a hairstylist, we've got you covered.
+                        Our goal is simple: to connect you with trusted professionals in your community. We believe in supporting local businesses and making it hassle-free for you to get things done.
+                        <div class="button">
+                            <a href="#">Read More</a>
+                        </div>
+                        <div class="social">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                        </div>
+                </div>
+            <div class="image-section">
+                <img src="./images/group-bg.jpg" alt="">
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+
     <!-- services section -->
     <div class="container-services service-bg">
         <h1>Local Services Hub</h1>
@@ -104,11 +148,12 @@
                 <h2>Painter</h2>
                 <p>Revitalize your space with custom art.</p>
             </div>
-
-
-
         </div>
-
     </div>
+
+
+<!-- footer -->
+
+
 </body>
 </html>

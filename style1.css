@@ -89,11 +89,47 @@ nav a:hover {
     background-color: #004d00;
     padding: 0.5em 1em;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .secondary-links a:hover {
     background-color: white;
 }
+
+/* Dropdown for navigation */
+.service-link,
+.profile-link {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #004d00;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.service-link:hover .dropdown-content,
+.profile-link:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #006400;
+}
+  
+
 
 /* hero section*/
 .hero {
@@ -213,6 +249,17 @@ nav a:hover {
         margin: unset;
     }
 
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        background-color: #004d00;
+        min-width: 150px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
     @media screen and (max-width:800px) {
         .nav-hero-bg {
             background-image: unset;
@@ -301,3 +348,140 @@ nav a:hover {
     color: white;
 }
 
+/* about section*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.cont {
+    background-color: #F0F0F0;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+.about-us {
+    width: 100%;
+}
+.about-us h1 {
+    font-size: 30px;
+    color: #004d00;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.about-us h1::after {
+    content: '';
+    height: 5px;
+    width: 100px;
+    background-color: #004d00;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.wrapper {
+    padding: 0px 60px;
+    margin: 60px auto;
+}
+.content {
+    width: 60%;
+    float: left;
+    text-align:  left;
+    padding: 0px 30px;  
+}
+.content h3 {
+    color: #222;
+    letter-spacing: 1px;
+}
+.content p{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin-top: 20px;
+}
+.content .button {
+    margin-top: 40px;
+}
+.content .button a{
+    color: white;
+    background-color: #004d00;
+    border: 1px  solid #004d00;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+}
+.content .button a:hover {
+    background-color: white;
+    color: #004d00;
+}
+.content .social {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.content .social a{
+    text-decoration: none;
+    color: #004d00f1;
+    font-size: 25px;
+    padding: 0px 7px;
+}
+.content .social a:hover{
+    color:#004d00;
+    transition: 1s ease-in-out;
+}
+
+/*.content .social i{
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px solid #222;
+    border-radius: 50%;
+    text-align: center;
+    
+
+}*/
+.image-section {
+    width: 40%;
+    float: right;
+    padding: 0px 30px;
+}
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 900px) {
+    .about-us {
+        width: 100%;
+        padding-top: 20px;
+    }
+    .about-us h1 {
+        font-size: 30px;
+    }
+    .content {
+        width: 100%;
+        float: none;
+    }
+    .content .button {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .button a{
+        padding: 8px 25px;
+    }
+    .content .social {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .content .social a{
+        font-size: 20px;
+    }
+    .image-section {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+    }
+}
