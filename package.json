@@ -1,0 +1,18 @@
+{
+  "name": "eventpal",
+  "version": "1.0.0",
+  "description": "EventPal is your all-in-one solution for stress-free event planning. Whether it's a corporate conference, wedding, or a casual get-together, EventPal is designed to make the entire planning process seamless and enjoyable. Say goodbye to chaos and hello to a smoother event organizing experience!",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express.js": "^1.0.0",
+    "knex": "^3.1.0",
+    "nodemon": "^3.0.3",
+    "pg": "^8.11.3"
+  }
+}
