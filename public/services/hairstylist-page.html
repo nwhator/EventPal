@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../home-page/index.js">
+    <link rel="stylesheet" href="../home-page/style1.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<body>
+  <header class="row container">
+    <div class="logo">EventPal</div>
+    <div class="toggleMenu" onclick="toggleMenu();"></div>
+    <nav class="row navigation">
+        <ul class="primary-links row">
+            <li><a href="../home-page/index1.html">Home</a></li>
+            <li><a href="../home-page/index1.html">About Us</a></li>
+            <li class="service-link">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Nanny</a>
+                    <a href="#">lawn mower</a>
+                    <a href="#">driver</a>
+                    <a href="#">chef</a>
+                    <a href="#">Hairstylist</a>
+                    <a href="#">makeup Artist</a>
+                    <a href="#">Painter</a>
+                    <a href="#">Photograper</a>
+                    <a href="#">baker</a>
+                    <a href="#">cleaner</a>
+
+                </div>
+            </li>
+            <li class="profile-link">
+                <a href="#">Profile</a>
+                <div class="dropdown-content">
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Dashboard</a>
+                    <a href="#">Account Setting</a>
+                    <a href="#">Payment Setting</a>
+                    <a href="#">reviews & Rating</a>
+                    <a href="#">Job listing</a>
+                    <a href="#">support</a>
+                </div>
+            </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+
+    </nav>
+  </header> 
+    <div class="hero-btns row">
+        <input class="search" type="text" id="searchInput" placeholder="Search for services...">
+        <button  id="searchButton"><i class="bi bi-search"></i></button>
+    </div>
+
+
+    <div class="cont-services">
+        <div class="header">
+            <h1>Find Your Perfect Service</h1>
+        </div>
+        <div class="row-service">
+            <div class="card">
+                <img src="./images/hair-9.jpeg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <div class="vendor-info">
+                        <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                        <h5 class="card-title">Faith Amadi</h5>
+                    </div>
+                    <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                    <p class="vendor-price">Price: $50</p>
+                    <p class="vendor-location">Location: City, Country</p>
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+
+            <div class="card">
+              <img src="./images/hair-8.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Aisha Femi</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p>
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-7.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Uchechi Grace</h5>
+                </div>
+                <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                <p class="vendor-price">Price: $50</p>
+                <p class="vendor-location">Location: City, Country</p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-6.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Glory Uba</h5>
+                </div>
+                <p class="vendor-rating"><i class="bi bi-star-fill"></i>4.5</p>
+                <p class="vendor-price">Price: $50</p>
+                <p class="vendor-location">Location: City, Country</p>  
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-5.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Princess lola</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p>
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-4.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Miracle Eze</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p>                 
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-3.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Oma Patience</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p>                  
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+            
+            <div class="card">
+              <img src="./images/hair-2.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Udoka Favour</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p>                  
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-1.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Pricilia Eze</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p> 
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-12.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Suzan Lizy</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p> 
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./images/hair-11.jpeg" alt="..." class="card-img-top">
+              <div class="card-body">
+                <div class="vendor-info">
+                    <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                    <h5 class="card-title">Joy Ebere</h5>
+                </div>
+                  <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                  <p class="vendor-price">Price: $50</p>
+                  <p class="vendor-location">Location: City, Country</p> 
+                  <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/hair-11.jpeg" alt="..." class="card-img-top">
+                <div class="card-body">
+                    <div class="vendor-info">
+                        <img src="./images/profile.jpg" alt="Profile Image" class="profile-image">
+                        <h5 class="card-title">Amarachi Oyemachi</h5>
+                    </div>
+                    <p class="vendor-rating"><i class="bi bi-star-fill"></i> 4.5</p>
+                    <p class="vendor-price">Price: $50</p>
+                    <p class="vendor-location">Location: City, Country</p> 
+                    <a href="#" class="btn btn-primary">Book Now</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>
+      <div class="row-footer">
+          <div class="col">
+              <div class="logo-footer">EventPal</div>
+              <p> 
+                  is your go-to destination for finding trusted local services. Whether you're looking for home maintenance, educational
+                  support, beauty services, or more, we've got you covered.
+                  Our platform connects you with skilled professionals in your community, making it easy to get things done.
+              </p>
+          </div>
+          <div class="col">
+              <h2>Testimonials <div class="underline"><span></span></div></h2>
+              <div class="testimonial">
+                  <div class="testimony-image">
+                      <img src="./images/test-1.jpg" alt="">
+                  </div>
+                  <div class="testimony-comment">
+                      <p>Incredible service! EventPal made everything so easy.</p>
+                  </div>
+              </div>
+              <div class="testimonial">
+                  <div class="testimony-image">
+                      <img src="./images/test2.jpg" alt="">
+                  </div>
+                  <div class="testimony-comment">
+                      <p>Love being part of EventPal Great platform, great team.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <h2>Links <div class="underline"><span></span></div></h2>
+              <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">FAQ</a></li>
+              </ul>
+          </div>
+          <div class="col">
+              <h2>Newletter <div class="underline"><span></span></div> </h2>
+              <form action="">
+                  <i class="bi bi-envelope"></i>
+                  <input type="email" placeholder="Enter your email id">
+                  <button type="submit"><i class="bi bi-arrow-right-short"></i></button>
+              </form>
+
+              <div class="social-icons">
+                  <i class="bi bi-facebook" style="width: 40px; height: 40px;"></i>
+                  <i class="bi bi-twitter"></i>
+                  <i class="bi bi-instagram"></i>
+                  <i class="bi bi-whatsapp"></i>
+              </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">EventPal @ 2024 - All Rights Reserverd</p>
+      
+  </footer>
+
+      
+</body>
+</html>

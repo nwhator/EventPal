@@ -20,15 +20,15 @@
                 <nav class="row navigation">
                     <ul class="primary-links row">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="#about">About Us</a></li>
                         <li class="service-link">
-                            <a href="#">Services</a>
+                            <a href="#services-page">Services</a>
                             <div class="dropdown-content">
                                 <a href="#">Nanny</a>
                                 <a href="#">lawn mower</a>
                                 <a href="#">driver</a>
                                 <a href="#">chef</a>
-                                <a href="#">Hairstylist</a>
+                                <a href="../services/hairstylist-page.html">Hairstylist</a>
                                 <a href="#">makeup Artist</a>
                                 <a href="#">Painter</a>
                                 <a href="#">Photograper</a>
@@ -65,7 +65,8 @@
                     <p>Tailored for Your Neighborhood, Crafted Just for You. Your Neighborhood, Your Services, Your Way</p>
                     <!-- search bar -->
                     <div class="hero-btns row">
-                        <a href="#" class="search-btn">Search</a>
+                        <input class="search-btn" type="text" id="searchInput" placeholder="Search for services...">
+                        <button  id="searchButton"><i class="bi bi-search"></i></button>
                     </div>
                 </div>
                 <div class="hero-cards row">
@@ -83,7 +84,7 @@
             </div>
         </section>
         <!--AboutUs section -->
-        <section>
+        <section id="about">
             <div class="about-us cont">
                 <h1>About Us</h1>
                 <div class="wrapper">
@@ -112,7 +113,7 @@
 
 
         <!-- services section -->
-        <div class="container-services service-bg">
+        <div id="services-page" class="container-services service-bg">
             <h1>Local Services Hub</h1>
             <div class="row-service">
                 <div class="service">
@@ -171,7 +172,27 @@
             </div>
         </div>
 
+        <!-- how it works section -->
+        <div class="works-section container-work ">
+            <h1>How It Works</h1>
+            <div class="row-service">
+                <div class="works ">
+                    <h2>Find the Service You Need</h2>
+                    <p>Use the search bar at the top of the page to search for the service you need, or browse through our categories to discover local service providers.</p>
+                </div>
 
+                <div class="works">
+                    <h2>Review Service Providers</h2>
+                    <p>Explore profiles of service providers in your area. View their skills, experience, ratings, and reviews from other clients to find the perfect match for your needs.</p>
+                </div>
+
+                <div class="works">
+                    <h2>Book or Request a Service</h2>
+                    <p>once you've found a service provider you like, you can directly book their services if they have availability listed.</p>
+                </div>
+
+            </div>
+        </div>
         <!-- footer -->
         <footer>
             <div class="row-footer">
